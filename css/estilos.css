@@ -305,12 +305,19 @@ body {
 .price__cta{
     display: block;
     padding: 20px 0;
-    border-radius: 10p;
+    border-radius: 4px;
     text-decoration: none;
     background-color: var(--bg-cta);
     font-weight: 600;
     color: var(--color-cta);
-    box-shadow: 0 0 1px rgba(0, 0, 0, .5);
+    border: 2px solid var(--color-cta);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.price__cta:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 /*Testimony*/
@@ -593,4 +600,55 @@ body {
         width: 30px;
         cursor: pointer;
     }
+}
+
+/* Estilos Urbanos Adicionales */
+
+.nav__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.about__title {
+    font-weight: 700;
+    color: var(--color-title);
+    margin: 10px 0;
+}
+
+.about__icons:hover .about__title {
+    color: var(--color-primary);
+}
+
+.knowledge__paragraph {
+    line-height: 1.8;
+    color: #ddd;
+}
+
+.footer__social {
+    margin-bottom: 20px;
+}
+
+.footer__icons {
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--color-primary);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+}
+
+.footer__icons:hover {
+    background-color: var(--color-primary);
+    transform: translateY(-3px);
+}
+
+.footer__icons:hover .footer__img {
+    filter: brightness(0);
 }
